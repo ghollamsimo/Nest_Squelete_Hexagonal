@@ -4,5 +4,5 @@ export class User {
         public readonly email: string,
         public readonly password: string,
         public readonly gender: string
-        , phone: number) {}
+        ,public readonly phone: number) {}
 }

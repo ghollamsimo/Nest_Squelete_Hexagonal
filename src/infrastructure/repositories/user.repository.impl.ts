@@ -12,13 +12,13 @@ export class UserRepositoryImpl implements UserInterface{
     index(user: User): User {
         const users = this.userModel.find()
         if (!users) return null;
-        return new User(user.name, user.email, user.password, user.gender, phone)
+        return new User(user.name, user.email, user.password, user.gender, user.phone)
     }
 
     async store(user: User): Promise<User> {
         const newUser = new this.userModel(user);
         const savedUser = await newUser.save();
-        return new User(savedUser.id, savedUser.name, savedUser.email, savedUser.password, phone);
+        return new User(savedUser.id, savedUser.name, savedUser.email, savedUser.password, savedUser.phone);
     }
 
 }
