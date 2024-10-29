@@ -1,8 +1,9 @@
 export class User {
     constructor(
-        public readonly name: string,
+        public readonly name: unknown,
         public readonly email: string,
-        public readonly password: string,
-        public readonly gender: string
-        ,public readonly phone: number) {}
+        public password: string,
+        public readonly gender: string,
+        public readonly phone: number
+    ) {}
 }
