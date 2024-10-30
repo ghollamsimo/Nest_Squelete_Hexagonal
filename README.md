@@ -1,16 +1,27 @@
 Hexagonal Architecture -->
 
 src
+
 ├── core
+
 │   ├── entities
+
 │   ├── interfaces
+
 ├── infrastructure
+
 │   ├── database
+
 │   ├── repositories
+
 ├── application
+
 │   ├── use-cases
+
 ├── interface
+
 │   ├── http
+
 └── main.ts
 
 --------------------------
